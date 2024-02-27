@@ -1,0 +1,23 @@
+<table>
+  <tr>
+      <th >Me</th>
+      <th *ngIf = "connectionOpen">Other User</th>
+  </tr>
+  <tr>
+      <td><video autoplay width = "450" height = "450" #p1></video></td>
+      <td *ngIf = "connectionOpen"><video autoplay width = "450" height = "450" #p2></video></td>
+  </tr>
+  <tr>
+    <td>
+      <button class = "mic" (click) = "muted()">
+        <img height = "40" width = "40" src = '{{this.mutedValue ? "../assets/microphone_closed.png": "../assets/microphone_open.png"}}'>
+      </button>
+    </td>
+  </tr>
+</table>
+&nbsp;
+<div class = "connection">
+  <button [disabled] = "connectionOpen" class = "connectionButton" (click) = "startConnection()">Start Connection</button>
+</div>
+
+<!-- <p>{{connection}}</p> -->

@@ -1,0 +1,36 @@
+th{
+    font-size: 50px;
+    color: lightgray;
+}
+.mic{
+    margin-left: 200px;
+    cursor: pointer;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid black; */
+}
+td{
+    padding: 5px;
+    background-color: lightgray;
+    border: 3px solid black;
+}
+.connection{
+    display: flex;
+    justify-content: center;
+}
+.connectionButton{
+    cursor: pointer;
+    background-color: #404040;
+    border: none;
+    padding: 10px;
+    color: lightgray;
+    font-size: 20px;
+    border-radius: 10px; 
+    font-family: Arial;
+}
+.connectionButton:hover{
+    background-color: black;
+}
+
